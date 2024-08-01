@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>POST method</title>
 </head>
 <body>
     <center>
-        <form action="" method="GET">
+        
+        <form action="" method="POST">
+            {% csrf_token %}
             <label for="usn">User_Name</label>
             <input type="text" name="username" id="usn"><br>
             <br>
@@ -16,6 +18,6 @@
             <br>
             <input type="submit">
         </form>
-    </center>
+    </center>   
 </body>
 </html>

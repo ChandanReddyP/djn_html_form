@@ -20,4 +20,5 @@ from app.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('html_forms/',html_forms,name='html_forms'),
+    path('insert_topic/',insert_topic,name='insert_topic')
 ]
